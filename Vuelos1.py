@@ -54,8 +54,4 @@ print(" a las",horaProgra,":",minutoProgra,"con",demoraTarde ,"minutos de retras
 
 
 
-# usamos el round(variable,tantos decimales) para redondear a los decimales que queremos manualmente
-# round(horaTarde,2) 
-# importamos datetime para usar el formato horas:minutos:segundos import datetime
-# tiempo=datetime.time(hora,minuto)
-# .strip para eliminar los espacios en blanco cuando llamamos a un archivo .txt o un string
+
