@@ -8,8 +8,11 @@ import math
 x = y = radio = 0.0
 puntos = 0 
 # Captura de Datos
-x = float(input(" De la abcisa del disparo (x): "))
-y = float(input(" De la ordenada del disparo (y): "))
+print("-"*30)
+print("\tTiro al Blanco")
+print("-"*30)
+x = float(input("Abcisa del disparo (x): "))
+y = float(input("Ordenada del disparo (y): "))
 radio = pow(x,2) + pow(y,2)
 # Proceso
 if (radio <= 16):
@@ -21,7 +24,11 @@ if (radio <= 16):
         puntos = 25
     else:
         puntos = 10
-    print(" Dió en la diana y obtuvo:",puntos,"puntos")
+    print("-"*30)
+    print("Dió en la diana ")
+    print("Puntuación",puntos,"pts")
 else:
+    print("-"*30)
     print(" No dió en la diana")
-print(" Fin del programa")
+print("-"*30)
+print("Fin del programa")

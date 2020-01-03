@@ -7,13 +7,13 @@ obstaculos = penaTiempo = penaDerribo = ponderacionFalta = tiempoFinal = 0
 tiempoPermitido = 90
 # Entrada de datos
 print("-"*30)
-print("\t Datos")
+print("\t    Datos")
 print("-"*30)
 jinete = input("Nombre del jinete: ")
 caballo = input("Nombre del caballo: ")
 minutos = int(input("Minutos del recorrido: "))
 segundos = int(input("Segundos del recorrido: "))
-obstaculos = int(input("Obstaculos derribados: "))
+obstaculos = int(input("Obstáculos derribados: "))
 print("-"*30)
 print("\t Resultados")
 print("-"*30)
@@ -31,4 +31,5 @@ if obstaculos <= 10:
     tiempoFinal = tiempoRealizado + penaTiempo + penaDerribo
     print(jinete,"montando a", caballo)
     print("Realizó el recorrido en",tiempoFinal,"segundos")
-
+else:
+    print("Descalificado por derribar más de 10 obstáculos")

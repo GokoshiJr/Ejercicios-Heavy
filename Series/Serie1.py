@@ -8,16 +8,18 @@ en la salida mostrar cada termino de la serie y la sumatoria
 """
 # Inicialización de Variables
 serie = acum = x = 0.0
-i = n = 0
+i = n = cont = 0
 signo = True
+print("-"*30)
+print("\t   Serie 1")
+print("-"*30)
 # Entrada de Datos
 x = float(input("Ingrese el valor de X: "))
-n = int(input("Cuantos terminos acumulara la serie: "))
+n = int(input("Cuantos términos acumulara la serie: "))
 # Proceso
-print("")
-print("Terminos de la Serie")
-# Ciclo for
-for i in range (1, n+1):
+print("-"*30)
+print("Términos de la Serie")
+for i in range (1, n+1): # Ciclo for
     acum = 1/pow(x,i)
     print(acum)
     if signo: 
@@ -26,9 +28,7 @@ for i in range (1, n+1):
     else:
         serie -= acum
         signo = True
-print("")
-print("La sumatoria es: ", s)
-print("Fin del programa")
-        
-
- 
+    cont += 1
+print("-"*30)
+print("La sumatoria es: ", serie)
+print("Se acumularon",cont,"términos en la serie")
