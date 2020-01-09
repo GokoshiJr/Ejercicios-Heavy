@@ -3,8 +3,8 @@ import math
 """ 
 Crear un programa que desarrolle la siguiente serie:
 S = 1/x - 1/x**2 + 1/x**3 - 1/x**4 + .....
-Donde x es un valor real, desarrollare la serie para N terminos
-en la salida mostrar cada termino de la serie y la sumatoria
+Donde x es un valor real, desarrolle la serie para N términos
+en la salida mostrar cada término de la serie y la sumatoria
 """
 # Inicialización de Variables
 serie = acum = x = 0.0
@@ -20,7 +20,7 @@ n = int(input("Cuantos términos acumulara la serie: "))
 print("-"*30)
 print("Términos de la Serie")
 for i in range (1, n+1): # Ciclo for
-    acum = 1/pow(x,i)
+    acum = (1/pow(x,i))
     print(acum)
     if signo: 
         serie += acum

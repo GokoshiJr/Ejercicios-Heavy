@@ -3,9 +3,9 @@ import math
 """ 
 Crear un programa que desarrolle la siguiente serie:
 S = 1/x - 1/x**2 + 1/x**3 - 1/x**4 + .....
-Donde x es un valor real, desarrollare la serie mientras el cociente
-1/X**n sea mayor que un epsilon dado, en la salida mostrar cada
-termino de la serie, cuantos terminos se acumularon y la sumatoria
+Donde x es un valor real, desarrolle la serie mientras el cociente
+1/X**n sea mayor que un épsilon dado, en la salida mostrar cada
+término de la serie, cuantos términos se acumularon y la sumatoria
 """
 # Inicialización de Variables
 sumatoria = 0.0
@@ -17,11 +17,11 @@ print("\t   Serie 2")
 print("-"*30)
 # Entrada de Datos
 x = float(input("Ingrese el valor de X: "))
-epsilon = float(input("Ingrese el valor de Epsilon: "))
+epsilon = float(input("Ingrese el valor de épsilon: "))
 print("-"*30)
 print("Términos de la serie")
 cociente = 1/x
-while cociente > epsilon: # Ciclo while
+while (cociente > epsilon): # Ciclo while
     print(cociente)
     if signo:
         sumatoria += cociente
@@ -31,7 +31,7 @@ while cociente > epsilon: # Ciclo while
         signo = True
     cont += 1
     exp += 1
-    cociente = 1/pow(x,exp)
+    cociente = (1/pow(x,exp))
 print("-"*30)
 print("La sumatoria es:",sumatoria)
 print("Se acumularon",cont,"términos en la serie")

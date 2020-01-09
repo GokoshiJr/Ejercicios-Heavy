@@ -30,11 +30,11 @@ s = (a * x) / 2
 print(s)
 for i in range (2,n+1): # Ciclo For
     if terminoB:
-        cociente = (b + contB) / pow(y,exponente)
+        cociente = ((b + contB) / pow(y,exponente))
         contB += 1
         terminoB = False
     else:
-        cociente = pow(a*x,exponente) / contA
+        cociente = (pow(a*x,exponente) / (contA))
         contA += 2
         exponente += 1
         terminoB = True
